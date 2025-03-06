@@ -7,5 +7,19 @@ public class expression {
         int q = y+z;
         System.out.println(p);
         System.out.println(q);
+        //Increment and Decrement operators
+        int i = 56;
+        //int b = i++;
+        System.out.println(i++);
+        System.out.println(i);
+        System.out.println(++i);
+        System.out.println(i);
+        System.out.println(--i);
+        System.out.println(i);
+
+         int a =7;
+        System.out.println(++a *8);
+        char ch ='b' ;
+        System.out.println(++ch);
     }
 }
