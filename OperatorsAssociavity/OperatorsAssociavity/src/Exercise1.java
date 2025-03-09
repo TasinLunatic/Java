@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Exercise1 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.println("Enter youir Physics marks: ");
+        System.out.println("Enter your Physics marks: ");
         int Physics = scan.nextInt();
         System.out.println("Enter your English marks : ");
         int English = scan.nextInt() ;
