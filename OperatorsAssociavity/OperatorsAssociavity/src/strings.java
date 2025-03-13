@@ -33,5 +33,8 @@ public class strings {
         System.out.println(Modifiedname.indexOf("s",2));
         System.out.println(Modifiedname.lastIndexOf("sin",3));
 
+        System.out.println(Name.equals("Tasin"));
+        System.out.println(Name.equalsIgnoreCase("taSin"));
+
     }
 }
