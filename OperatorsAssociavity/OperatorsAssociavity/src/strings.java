@@ -17,5 +17,8 @@ public class strings {
         String nontrimedString = "   T a s i n   ";
         System.out.println(nontrimedString);
         System.out.println(nontrimedString.trim());
+
+        System.out.println(Name.substring(2));
+        System.out.println(Name.substring(1,3));
     }
 }
