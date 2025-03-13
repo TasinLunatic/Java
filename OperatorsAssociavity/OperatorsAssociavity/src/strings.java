@@ -20,5 +20,18 @@ public class strings {
 
         System.out.println(Name.substring(2));
         System.out.println(Name.substring(1,3));
+
+        System.out.println(Name.replace("T","Y"));
+
+        System.out.println(Name.startsWith("Tas"));
+        System.out.println(Name.endsWith("Tas"));
+        System.out.println(Name.charAt(2));
+        System.out.println(Name.indexOf("s"));
+
+        String Modifiedname = "Yasin" ;
+        System.out.println(Modifiedname.indexOf("sin22"));
+        System.out.println(Modifiedname.indexOf("s",2));
+        System.out.println(Modifiedname.lastIndexOf("sin",3));
+
     }
 }
