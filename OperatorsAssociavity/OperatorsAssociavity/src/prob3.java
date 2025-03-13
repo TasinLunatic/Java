@@ -1,8 +1,5 @@
-import java.security.DrbgParameters;
-import java.util.Scanner;
-
 public class prob3 {
-    public static void main(String[] args) {
+    public static void main( String[] args) {
         // Write the following expression in java program
         //V^2-U^2/2as
         System.out.println("V^2 -u^2/2aS");
