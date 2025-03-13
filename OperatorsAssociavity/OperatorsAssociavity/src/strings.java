@@ -36,5 +36,7 @@ public class strings {
         System.out.println(Name.equals("Tasin"));
         System.out.println(Name.equalsIgnoreCase("taSin"));
 
+        System.out.println("I'm escape sequence: \t double quote");
+
     }
 }
