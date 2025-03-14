@@ -12,5 +12,13 @@ public class Main {
         System.out.println(ucase);
         System.out.println(name.replace("s","r"));
         System.out.println(name.replace("as","ur"));
+        String nontrimed = "   t A s I n  " ;
+        System.out.println(nontrimed);
+
+
+        System.out.println(name.equals("Tasin"));
+        System.out.println(name.equalsIgnoreCase("taSin"));
+
+        System.out.println("I'm escape sequence: \t double quote");
     }
 }
