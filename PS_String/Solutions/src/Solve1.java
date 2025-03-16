@@ -19,6 +19,11 @@ public class Solve1 {
         letter = letter.replace("<|name|>","Tasin") ;
         System.out.println(letter);
 
+        //Write a java program to detect a double and  triple space in a string?
+        String mystring ="This string contains with double and  triple spaces.";
+        System.out.println(mystring.indexOf("  "));
+        System.out.println(mystring.indexOf("   "));
+
 
     }
 }
