@@ -26,11 +26,11 @@ public class RL_operator {
         boolean a2 =false;
         boolean b2=true ;
         boolean c2=true ;
-        System.out.println("Not of a2 is: ");
+        System.out.println("Not(a) of a2 is: ");
         System.out.println(!a2);
-        System.out.println("Not of b2 is:");
+        System.out.println("Not(b) of b2 is:");
         System.out.println(!b2);
-        System.out.println("Not of c2 is:");
+        System.out.println("Not(c) of c2 is:");
         System.out.println(!c2);
     }
 }
