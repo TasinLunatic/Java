@@ -10,7 +10,7 @@ public class ComputeArea {
 
         if (radius>=0){
             double area=radius*radius*3.1416 ;
-            System.out.println("The area for a circle of radius"+radius+"is"+area);
+            System.out.println("The radius of a circle  = " + radius + " and the area is = " + area);
         }else {
             System.out.println("The radius is negative,please again");
         }
