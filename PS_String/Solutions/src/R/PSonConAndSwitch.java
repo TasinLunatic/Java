@@ -28,7 +28,7 @@ public class PSonConAndSwitch {
          System.out.println("Your Overall percentage is : "+avg);
 
          if (avg>=40 && m1>=33 && m2>=33 && m3>=33){
-             System.out.println("Congratulation, You passed!");
+             System.out.println("Congratulation, You have been promoted.");
          }else {
              System.out.println("Sorry! You have not promoted.");
          }
