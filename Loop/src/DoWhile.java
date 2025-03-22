@@ -17,5 +17,12 @@ public class DoWhile {
         System.out.println("Enter the value of n: ");
         int n= sc.nextInt();
 
+        int i =1;
+        System.out.println("The first " + n + " natural numbers are:");
+
+        do {
+            System.out.println(i+" ");
+            i++;
+        }while (i<=n);
     }
 }
