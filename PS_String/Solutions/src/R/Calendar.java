@@ -1,9 +1,13 @@
 package R;
 
+import java.util.Scanner;
+
 public class Calendar {
     public static void main(String[] args) {
         //Write a java program to find out the day of the week given the number[1 for monday 2 for tues and so on...]
-        int day =2;
+        Scanner sc =new Scanner(System.in);
+        System.out.println("Enter Number: ");
+        int day = sc.nextInt();
 
         switch (day){
             case 1 ->System.out.println("Monday");
