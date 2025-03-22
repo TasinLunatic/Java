@@ -2,7 +2,7 @@ package R;
 import java.util.Random ;
 import java.util.Scanner;
 
-public class RPSgame {
+public class RPS_game {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
@@ -12,7 +12,7 @@ public class RPSgame {
 
         System.out.println("Welcome to Rock, Paper, Scissors!");
         System.out.print("Enter your choice (Rock, Paper, Scissors): ");
-        String userChoice = scanner.nextLine();
+        String userChoice = sc.nextLine();
 
         int computerIndex = random.nextInt(3);
         String computerChoice = choices[computerIndex];
@@ -27,7 +27,7 @@ public class RPSgame {
                 System.out.println("You win!");
         } else {
             System.out.println("You lose!");
-                }
+        }
 
 
     }
