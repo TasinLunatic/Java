@@ -1,7 +1,7 @@
 package R;
 import java.util.Scanner ;
 
-public class SwitchCase {
+public class elseifCase {
     public static void main(String[] args) {
         int age;
         System.out.println("Please Enter your age : ");
@@ -14,9 +14,12 @@ public class SwitchCase {
         } else if (age>46) {
             System.out.println("You are semi-experienced.");
         } else if (age>36) {
-            System.out.println("You are beginner. ");
+            System.out.println("You are Semi-beginner. ");
 
-        }else {
+        } else if (age>26) {
+            System.out.println("You are beginner .");
+
+        } else {
             System.out.println("You are not experienced .");
         }
     }
