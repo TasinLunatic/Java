@@ -12,5 +12,7 @@ public class WhileLoop {
             System.out.println(i);
             i++;
         }
+
+        System.out.println("Finish While loop!");
     }
 }
