@@ -25,6 +25,7 @@ public class PSonConAndSwitch {
          m3 = sc.nextByte() ;
 
          float avg = (m1+m2+m3)/3.0f ;
+         System.out.println("Your Overall percentage is : "+avg);
 
          if (avg>=40 && m1>=33 && m2>=33 && m3>=33){
              System.out.println("Congratulation, You passed!");
