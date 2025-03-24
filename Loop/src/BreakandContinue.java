@@ -4,6 +4,11 @@ public class BreakandContinue {
         for(int i=1;i<5;i++){
             System.out.println(i);
             System.out.println("Java is amazing");
+
+            if (i==2){
+                System.out.println("End the loop!");
+                break;
+            }
         }
     }
 }
