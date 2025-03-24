@@ -10,5 +10,16 @@ public class BreakandContinue {
                 break;
             }
         }
+
+        for(int i=1;i<50;i++){
+
+            if (i==2){
+                System.out.println("End the loop!");
+                continue;
+            }
+
+            System.out.println(i);
+            System.out.println("Java is amazing");
+        }
     }
 }
