@@ -25,5 +25,12 @@ public class PS_Loop {
         }
         System.out.println("Sum of even number is : ");
         System.out.println(sum);
+
+        //Write a program to print multiplication table of a given number n.
+        int n2=5;
+
+        for (int i2=1;i2<=10;i2++){
+            System.out.printf("%d X %d = %d\n",n2,i2,n2*i2) ;
+        }
     }
 }
