@@ -14,5 +14,16 @@ public class PS_Loop {
             }
             System.out.println("\n");
         }
+
+        //Write a program to sum first n even numbers using while loops?
+        int sum =0;
+        int n1=3;
+
+        for (int i1=0;i1<n1;i1++){
+            sum = sum + (2*i1);
+
+        }
+        System.out.println("Sum of even number is : ");
+        System.out.println(sum);
     }
 }
