@@ -7,13 +7,15 @@ public class ForLoop {
         }
         //Write a program to print n odd number using for loop?
         //2n+1 =odd number=1,3,5,7....
-        int n=0;
-        Scanner sc=new Scanner(System.in);
-        System.out.println("Enter an integer: ");
-        int i= sc.nextInt();
+        int n=5;
 
-        for (int i1=0;i<50;i++){
-            System.out.println(2*i+1);
+        for (int i1=0;i1<50;i1++){
+            System.out.println(2*i1+1);
+        }
+
+        //Decrement of for loop
+        for (int i2=5;i2>0;i2--){
+            System.out.println(i2);
         }
     }
 }
