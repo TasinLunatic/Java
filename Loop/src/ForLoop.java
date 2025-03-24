@@ -14,7 +14,7 @@ public class ForLoop {
         }
 
         //Decrement of for loop
-        for (int i2=5;i2>0;i2--){
+        for (int i2=5;i2>=0;i2--){
             System.out.println(i2);
         }
     }
