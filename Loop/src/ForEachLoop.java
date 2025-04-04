@@ -1,5 +1,7 @@
 public class ForEachLoop {
     public static void main(String[] args) {
+        //Connected with an Array file
+
         int [] marks ={49,98,87,76,89};
         System.out.println(marks.length);
         //Display the Array in naive way
@@ -19,6 +21,11 @@ public class ForEachLoop {
         System.out.println("Display the marks in reverse order:");
         for (int i= marks.length-1;i>=0;i--){
             System.out.println(marks[i]);
+        }
+        //Using for-each loop
+        System.out.println("Display the marks by using for-each loop:");
+        for (int element:marks){
+            System.out.println(element);
         }
     }
 }
