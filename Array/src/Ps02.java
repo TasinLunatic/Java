@@ -1,5 +1,7 @@
 public class Ps02 {
     public static void main(String[] args) {
+        //Write a program to find out whether a given number is present in an array or not?
+
         float []marks ={77.5f,89.3f,55.65f,67.9f,56.56f};
         float num=55.65f;
         boolean isInArray=false;
