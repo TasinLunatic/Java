@@ -5,6 +5,12 @@ public class Overloading {
     static  void change2(int []arr){
         arr[0]=98;
     }
+    static void foo(){
+        System.out.println("Good morning bro!");
+    }
+    static  void foo(int a){
+        System.out.println("Good Morning "+ a + " bro!");
+    }
     static void telljoke(){
         System.out.println("I invented a new word!\n"+"plagiarism!");
     }
@@ -21,6 +27,11 @@ public class Overloading {
 
         change2(marks);
         System.out.println("The value of x after running is: "+ marks[0]);
+
+        //Method Overloading
+        foo( );
+        foo(400);
+
     }
 
 
