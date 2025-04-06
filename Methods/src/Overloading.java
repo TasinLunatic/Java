@@ -11,6 +11,10 @@ public class Overloading {
     static  void foo(int a){
         System.out.println("Good Morning "+ a + " bro!");
     }
+    static void foo(int a,int b){
+        System.out.println("Good Morning "+ a + " bro!");
+        System.out.println("Good Morning "+ b + " bro!");
+    }
     static void telljoke(){
         System.out.println("I invented a new word!\n"+"plagiarism!");
     }
@@ -31,6 +35,7 @@ public class Overloading {
         //Method Overloading
         foo( );
         foo(400);
+        foo(200,400);
 
     }
 
