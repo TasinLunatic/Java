@@ -10,5 +10,6 @@ public class ObjOrientedProg {
         //2.Encapsulation-The act of putting various components together(in a capsule)
         //3.Inheritance - The act of deriving new things from existing things.(Phone => Smart phone)
         //4.Polymorphism - One entity many form.(Smart phone to calculator or phone or camera)
+        System.out.println("Here is all questions answer!");
     }
 }
