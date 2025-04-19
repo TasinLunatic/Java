@@ -3,16 +3,17 @@ public class CirclewithStaticMembers {
     static int numberOfObjects = 0;
 
     CirclewithStaticMembers(){
-        numberOfObjectsfObjects++;
-        radius=1;
+        numberOfObjects++;
+        radius=10;
     }
-    CirclewithStaticMembers(){
-        numberOfObjectsfObjects++;
+
+    CirclewithStaticMembers(double newRadius){
+        numberOfObjects++;
         this.radius = newRadius;
     }
 
     static int getNumberOfObjects(){
-        return numberOfObjectsfObjects;
+        return numberOfObjects;
     }
     double getArea(){
         return radius*radius*Math.PI;
