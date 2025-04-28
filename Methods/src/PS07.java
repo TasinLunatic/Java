@@ -11,7 +11,7 @@ class square{
 
 public class PS07 {
     public static void main(String[] args) {
-    // creat a class square with a method to initialized its side,area,perimeter etc.
+    // create a class square with a method to initialized its side,area,perimeter etc.
         square sq=new square();
         sq.side =3;
         System.out.println(sq.area());
