@@ -1,6 +1,11 @@
 class MyEmployee{
     private int id;
     private String name;
+
+    public MyEmployee(){
+        id=45;
+        name="hacker!";
+    }
     public String getName(){
         return name;
     }
@@ -18,6 +23,10 @@ class MyEmployee{
 
 public class Constructors {
     public static void main(String[] args) {
-
+      MyEmployee tasin =new MyEmployee();
+      //tasin.setName("hacker");
+      //tasin.setId(440);
+      System.out.println(tasin.getId());
+      System.out.println(tasin.getName());
     }
 }
