@@ -15,10 +15,9 @@ public class QA01 {
             System.out.println("Draw");
         } else if (userInput==0 && ComputerInput==2 || userInput==1 && ComputerInput==0 || userInput==2 && ComputerInput==1) {
             System.out.println("You win");
-        }else {
+        }else{
             System.out.println("Computer  Win!");
         }
-
 
     }
 }
