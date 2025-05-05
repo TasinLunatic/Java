@@ -25,5 +25,7 @@ public class Main {
        //Tasin.name="Hacker";[Throw an error during access private modifier]
         Tasin.setName("Hacker");
         System.out.println(Tasin.getName());
+        Tasin.setId(245);
+        System.out.println(Tasin.getId());
     }
 }
