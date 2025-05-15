@@ -27,7 +27,11 @@ public class PS01 {
         cylinder myCylinder =new cylinder();
         myCylinder.setHeight(45);
         int h=myCylinder.getHeight();
-        System.out.println(h);
+        System.out.println("Height:"+h);
+
+        myCylinder.setRadius(33);
+        int r=myCylinder.getRadius();
+        System.out.println("Radius:"+r);
 
     }
 }
