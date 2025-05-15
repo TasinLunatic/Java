@@ -17,6 +17,14 @@ class cylinder{
     public void setRadius(int radius) {
         this.radius = radius;
     }
+
+    public double surfaceArea(){
+        return 2*3.14*radius*radius+2*3.14*radius*height;
+    }
+
+    public double volume(){
+        return 3.14*radius*radius*height;
+    }
 }
 
 
@@ -32,6 +40,9 @@ public class PS01 {
         myCylinder.setRadius(33);
         int r=myCylinder.getRadius();
         System.out.println("Radius:"+r);
+
+        System.out.println("Suraface Area:"+myCylinder.surfaceArea());
+        System.out.println("Volume:"+myCylinder.volume());
 
     }
 }
