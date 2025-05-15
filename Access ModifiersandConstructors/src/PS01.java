@@ -41,7 +41,7 @@ public class PS01 {
         int r=myCylinder.getRadius();
         System.out.println("Radius:"+r);
 
-        System.out.println("Suraface Area:"+myCylinder.surfaceArea());
+        System.out.println("Surface Area:"+myCylinder.surfaceArea());
         System.out.println("Volume:"+myCylinder.volume());
 
     }
