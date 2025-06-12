@@ -2,57 +2,54 @@ package Case_study10;
 import java.util.Scanner;
 import java.util.ArrayList;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+/**
+ * A simple web crawler that fetches a webpage and extracts all hyperlinks.
+ */
 public class WebCrawler {
     public static void main(String[] args) {
+        String url = "https://www.tzc.edu.cn"; // URL to crawl
 
-        Scanner input = new Scanner(System.in);
-        System.out.print("Enter a URL: ");
-        String url = input.nextLine();
-        crawler(url);
-    }
-
-    public static void crawler(String startingURL) {
-        ArrayList<String> listOfPendingURLs = new ArrayList<>();
-        ArrayList<String> listOfTraversedURLs = new ArrayList<>();
-
-        listOfPendingURLs.add(startingURL);
-        while (!listOfPendingURLs.isEmpty() && listOfTraversedURLs.size() <= 100) {
-            String urlString = listOfPendingURLs.remove(0);
-            if (!listOfTraversedURLs.contains(urlString)) {
-                System.out.println("Crawl " + urlString);
-
-
-                for (String s : getSubURLs(urlString)) {
-                    if (!listOfTraversedURLs.contains(s)) listOfPendingURLs.add(s);
-                }
-
-            }
+        // Fetch the HTML content of the page
+        String htmlContent = fetchHtml(url);
+        if (htmlContent != null) {
+            extractLinks(htmlContent);
         }
     }
 
-    public static ArrayList<String> getSubURLs(String urlString) {
-        ArrayList<String> list = new ArrayList<>();
-
+    // Method to fetch HTML content from a URL
+    private static String fetchHtml(String urlString) {
+        StringBuilder content = new StringBuilder();
         try {
-            java.net.URL url = new java.net.URL(urlString);
-            Scanner input = new Scanner(url.openStream());
-            int current = 0;
-            while (input.hasNext()) {
-                String line = input.nextLine();
-                current = line.indexOf("http:", current);
-                while (current > 0) {
-                    int endIndex = line.indexOf("\"", current);
-                    if (endIndex > 0) {
-                        list.add(line.substring(current, endIndex));
-                        current = line.indexOf("http", endIndex);
-                    } else
-                        current = -1;
-
-                }
+            URL url = new URL(urlString);
+            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+            connection.setRequestMethod("GET");
+            BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+            String inputLine;
+            while ((inputLine = in.readLine()) != null) {
+                content.append(inputLine);
             }
-        } catch (Exception ex) {
-            System.out.println("Error: " + ex.getMessage());
+            in.close();
+        } catch (Exception e) {
+            System.err.println("Error fetching the page: " + e.getMessage());
+            return null;
         }
-        return list;
+        return content.toString();
+    }
+
+    // Method to extract and print hyperlinks from HTML content
+    private static void extractLinks(String html) {
+        String regex = "href=\"(.*?)\"";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(html);
+        while (matcher.find()) {
+            System.out.println("Link: " + matcher.group(1));
+        }
     }
 }

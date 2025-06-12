@@ -6,10 +6,10 @@ import java.util.Scanner;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class CountingMonitaryUnits {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
+        Scanner scn=new Scanner(System.in);
 
         System.out.print("Enter an amount in double:");
-        double amount =sc.nextDouble();
+        double amount =scn.nextDouble();
 
         int remainingAmount=(int)(amount*100);
 
